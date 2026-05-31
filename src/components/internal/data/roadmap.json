@@ -1,0 +1,42 @@
+[
+  {
+    "ticket": "Dev Workspace",
+    "status": "Cerrado",
+    "category": "Setup"
+  },
+  {
+    "ticket": "Git Repository Cleanup",
+    "status": "Cerrado",
+    "category": "GitHub"
+  },
+  {
+    "ticket": "Slack Channels",
+    "status": "Cerrado",
+    "category": "Operations"
+  },
+  {
+    "ticket": "Astro Local Validation",
+    "status": "Cerrado",
+    "category": "Web"
+  },
+  {
+    "ticket": "Coolify Production Deploy",
+    "status": "En progreso",
+    "category": "Deploy"
+  },
+  {
+    "ticket": "Domain Go Live",
+    "status": "Pendiente",
+    "category": "DNS"
+  },
+  {
+    "ticket": "Lead Capture System",
+    "status": "Pendiente",
+    "category": "Marketing"
+  },
+  {
+    "ticket": "First Digital Product",
+    "status": "Pendiente",
+    "category": "Product"
+  }
+]
