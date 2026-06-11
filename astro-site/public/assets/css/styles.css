@@ -140,3 +140,27 @@ h3 { font-size: 1.35rem; }
   .terminal-card { right: 0; }
   .network-card { left: 20px; right: auto; }
 }
+
+/* === Focus visible (accesibilidad teclado) === */
+a:focus-visible,
+button:focus-visible,
+.signup-form input:focus-visible {
+  outline: 2px solid var(--cyan);
+  outline-offset: 3px;
+  border-radius: 4px;
+}
+
+/* === Reduced motion === */
+@media (prefers-reduced-motion: reduce) {
+  .reveal {
+    opacity: 1;
+    transform: none;
+    transition: none;
+  }
+  .floating-card {
+    animation: none;
+  }
+  html {
+    scroll-behavior: auto;
+  }
+}
