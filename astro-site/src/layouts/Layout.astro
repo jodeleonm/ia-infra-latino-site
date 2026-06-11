@@ -1,15 +1,63 @@
 ---
-import '../styles/global.css'
+interface Props {
+  title?: string;
+  description?: string;
+}
+
+const {
+  title = "IA Infra Latino | IA + Infraestructura + Automatización",
+  description = "IA Infra Latino: IA, infraestructura y automatización para ingenieros modernos que quieren construir sistemas, autoridad técnica y productos digitales.",
+} = Astro.props;
 ---
 
-<html lang="en">
+<!doctype html>
+<html lang="es">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width" />
-    <title>IA Infra Latino</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content={description} />
+    <meta name="keywords" content="IA para ingenieros, infraestructura, data center, network engineering, automatización, DevOps, productos digitales técnicos" />
+    <meta name="author" content="Jose Roberto De Leon" />
+    <title>{title}</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/assets/css/styles.css" />
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
   </head>
-
   <body>
+    <div class="background-grid"></div>
+    <header class="site-header">
+      <nav class="nav container">
+        <a class="brand" href="/#top" aria-label="IA Infra Latino Home">
+          <span class="brand-mark">IA</span>
+          <span>Infra Latino</span>
+        </a>
+        <button class="nav-toggle" aria-label="Abrir menú" aria-expanded="false">☰</button>
+        <div class="nav-links" data-nav-links>
+          <a href="#expertise">Expertise</a>
+          <a href="#systems">Sistemas</a>
+          <a href="#roadmap">Roadmap</a>
+          <a href="#leadmagnet">Recursos</a>
+        </div>
+      </nav>
+    </header>
+
     <slot />
+
+    <footer class="footer container">
+      <div>
+        <a class="brand" href="/#top"><span class="brand-mark">IA</span><span>Infra Latino</span></a>
+        <p>IA aplicada a infraestructura, automatización y monetización técnica.</p>
+      </div>
+      <div class="footer-links">
+        <a href="https://github.com/" target="_blank" rel="noopener">GitHub</a>
+        <a href="https://linkedin.com/" target="_blank" rel="noopener">LinkedIn</a>
+        <a href="https://youtube.com/" target="_blank" rel="noopener">YouTube</a>
+        <a href="https://tiktok.com/" target="_blank" rel="noopener">TikTok</a>
+      </div>
+    </footer>
+
+    <script is:inline src="/assets/js/main.js"></script>
   </body>
 </html>
