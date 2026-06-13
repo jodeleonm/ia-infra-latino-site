@@ -123,7 +123,7 @@ h3 { font-size: 1.35rem; }
 .signup-form small { color: var(--gray); }
 .footer { padding: 40px 0 54px; display: flex; flex-wrap: wrap; gap: 20px 32px; border-top: 1px solid var(--border); }
 .footer-top { display: flex; justify-content: space-between; align-items: center; width: 100%; }
-.footer-firma { text-align: center; width: 100%; margin: 0; }
+.footer-firma { display: block; text-align: center; width: 100%; margin: 0; }
 .footer-links { display: flex; gap: 18px; flex-wrap: nowrap; color: var(--muted); font-weight: 700; }
 .footer-links a:hover { color: var(--cyan); }
 .reveal { opacity: 0; transform: translateY(20px); transition: opacity .7s ease, transform .7s ease; }
